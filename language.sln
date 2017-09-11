@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "language", "language.vcproj", "{E6656138-E330-476B-B1E4-C8CEC91D2C2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		French|Win32 = French|Win32
+		German|Win32 = German|Win32
+		Italian|Win32 = Italian|Win32
+		Release|Win32 = Release|Win32
+		Spanish|Win32 = Spanish|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Debug|Win32.Build.0 = Debug|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.French|Win32.ActiveCfg = French|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.French|Win32.Build.0 = French|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.German|Win32.ActiveCfg = German|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.German|Win32.Build.0 = German|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Italian|Win32.ActiveCfg = Italian|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Italian|Win32.Build.0 = Italian|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Release|Win32.ActiveCfg = Release|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Release|Win32.Build.0 = Release|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Spanish|Win32.ActiveCfg = Spanish|Win32
+		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Spanish|Win32.Build.0 = Spanish|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
