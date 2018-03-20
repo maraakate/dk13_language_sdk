@@ -1,13 +1,7 @@
 #ifndef __MULTILANG_H
 #define __MULTILANG_H
 
-#ifndef NULL
-#define NULL 0
-#endif
-
-typedef unsigned char 		byte;
-
-#define	LANGDLL_API_VERSION		10
+#define	LANGDLL_API_VERSION		11
 
 typedef struct
 {

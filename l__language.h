@@ -1,3 +1,6 @@
+#ifndef _L__LANGUAGE_H
+#define _L__LANGUAGE_H
+
 /* 
 // LANGUAGE text, header file  (utilized for localizations)
 //
@@ -31,6 +34,41 @@
 #define SYMBOL_RADIOBUTTON            "\x08f"
 #define INSERTION_BAR_CHAR           ('\x05f')		 // 95
 
+typedef struct
+{
+	char	*name;
+	int		keynum;
+} keyname_t;
+
+extern keyname_t keynames[];
+extern unsigned char scantokey[128];
+extern char *tongue[];
+extern char *tongue_menu[];
+extern char *tongue_menu_options[];
+extern char *texture_quality_desc[];
+extern char *tongue_weapons[];
+extern char *tongue_armors[];
+extern char *tongue_monsters[];
+extern char *tongue_world[];
+extern char *tongue_deathmsg_daikatana[];
+extern char *tongue_deathmsg_self[];
+extern char *tongue_deathmsg_weapon1[];
+extern char *tongue_deathmsg_weapon2[];
+extern char *tongue_deathmsg_weapon3[];
+extern char *tongue_deathmsg_weapon4[];
+extern char *tongue_scoreboard[];
+extern char *tongue_difficulty[];
+extern char *tongue_skincolors[];
+extern char *tongue_statbar[];
+extern char *tongue_weapon_misc[];
+extern char *tongue_sidekick[];
+extern char *tongue_ctf[];
+extern char *tongue_deathtag[];
+extern char *tongue_save_error[];
+extern char *tongue_quit_msgs[];
+extern char *tongue_quit_msgs_rare[];
+extern char *tongue_menu_joystick[];
+extern char *tongue_menu_autoupdate[];
 
 enum tongue_artifacts_enum
 {
@@ -474,6 +512,27 @@ enum tongue_menu_options_enum
 	T_MENU_S_PREFERRED_MUSIC,
 	// Knightmare added 3/5/17
 	T_MENU_SCR_LOADING_SOUNDS,
+	T_MENU_VIDEO_ANTIALIASING, /* FS */
+
+	/* FS: Window mode picker */
+	T_MENU_VIDEO_WINDOWMODE,
+	T_MENU_VIDEO_WINDOWED,
+	T_MENU_VIDEO_BORDERLESS,
+
+	/* FS: Video Options Page 2 */
+	T_MENU_VIDEO_SELFSHADOWS,
+	T_MENU_VIDEO_DYNAMICLIGHTS,
+	T_MENU_VIDEO_PARTICLES,
+	T_MENU_VIDEO_REDUCED_PARTICLES,
+	T_MENU_VIDEO_LEGACY_RENDERER,
+	T_MENU_VIDEO_8BIT_TEX,
+	T_MENU_VIDEO_MULTI_TEX,
+	T_MENU_VIDEO_VERTEX_ARRAYS,
+	T_MENU_VIDEO_HW_GAMMA,
+	T_MENU_VIDEO_GLOW_SURFACES,
+	T_MENU_VIDEO_TEXTURE_FILTER,
+	T_MENU_VIDEO_BILINEAR,
+	T_MENU_VIDEO_TRILINEAR,
 };
 
 enum tongue_weapon_names
@@ -987,3 +1046,6 @@ enum tongue_menu_autoupdate_enums
     #endif
   #endif
 #endif
+
+#endif // _L__LANGUAGE_H
+
