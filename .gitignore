@@ -1,25 +1,13 @@
 # ignore all make dependency files and linux object binaries
 *.d
 *.o
-bin/
-# ignore all the windows binaries - they shouldn't be committed! 
 Debug/
 Release/
-German_Debug/
 German/
 French/
-French_Debug/
 Italian/
 Spanish/
 Japanese/
-Demo_Release/
-Demo_Debug/
-dkded_release/
-dkded_debug/
-IONRelease/
-IONDebug/
-/Libs/IonCommon*.lib
-/Libs/libent*.lib
 *.log
 *.ncb
 *.opt
@@ -28,4 +16,6 @@ IONDebug/
 *.user
 *.aps
 *.clw
+*.so
+*.dll
 out

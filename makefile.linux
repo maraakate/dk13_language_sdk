@@ -1,0 +1,58 @@
+# FS: Makefile for DK 1.3 SDK for Linux.
+#     Use LANG_FLAGS= to change for non-english.
+#     i.e. make -f makefile.linux LANG_FLAGS=-DTONGUE_SPANISH to build
+#     for Spanish.
+
+CC = g++
+
+ifeq ($(DEBUG),1)
+CFLAGS = -g
+else
+CFLAGS = -O2
+endif
+CFLAGS+= -c -DLINUX -m32 -Wall -Wno-write-strings -fomit-frame-pointer -fPIC
+
+CPPFLAGS=
+
+LDFLAGS = -L. -Wl,--no-as-needed -m32 -Wl,--warn-common -Wl,-Bsymbolic -Wl,-z,origin -shared -Wl,-soname,language.so
+
+LANG_SO_NAME=language_english
+LANG_FILE=l_english.o
+LANG_FLAGS=-DTONGUE_ENGLISH
+
+ifeq ($(LANG_FLAGS),-DTONGUE_FRENCH)
+LANG_SO_NAME=language_french
+LANG_FILE=l_french.o
+endif
+
+ifeq ($(LANG_FLAGS),-DTONGUE_GERMAN)
+LANG_SO_NAME=language_german
+LANG_FILE=l_german.o
+endif
+
+ifeq ($(LANG_FLAGS),-DTONGUE_ITALIAN)
+LANG_SO_NAME=language_italian
+LANG_FILE=l_italian.o
+endif
+
+ifeq ($(LANG_FLAGS),-DTONGUE_SPANISH)
+LANG_SO_NAME=language_spanish
+LANG_FILE=l_spanish.o
+endif
+
+.PHONY: all clean
+
+OBJS =	main.o			\
+	$(LANG_FILE)
+
+all: $(LANG_SO_NAME).so
+
+clean:
+	rm -f *.o
+	rm -f *.so
+
+$(LANG_SO_NAME).so: $(OBJS)
+	$(CC) -o $(LANG_SO_NAME).so $(LDFLAGS) $(OBJS) $(LDLIBS)
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) $(LANG_FLAGS) -c $< -o $@
