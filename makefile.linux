@@ -10,7 +10,7 @@ CFLAGS = -g
 else
 CFLAGS = -O2
 endif
-CFLAGS+= -c -DLINUX -m32 -Wall -Wno-write-strings -fomit-frame-pointer -fPIC
+CFLAGS+= -c -DLINUX -m32 -Wall -Wno-write-strings -ffloat-store -fomit-frame-pointer -fPIC
 
 CPPFLAGS=
 
