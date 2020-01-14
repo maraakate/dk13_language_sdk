@@ -1,6 +1,6 @@
 #include "l__language.h"
 
-#if _MSC_VER
+#ifdef _MSC_VER
 //	for C++ classes that will be used in other DLLs
 #ifndef	DllExport_Plus
 #define DllExport_Plus __declspec(dllexport)
@@ -20,7 +20,6 @@ language_export_t lang;
 
 DllExport language_export_t *GetLangAPI (void *import)
 {
-
 	lang.api_version = LANGDLL_API_VERSION;
 	lang.tongue = tongue;
 	lang.texture_quality_desc = texture_quality_desc;

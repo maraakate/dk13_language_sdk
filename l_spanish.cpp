@@ -110,7 +110,7 @@ keyname_t keynames[] =
 
 // vkey conversion table
 //==========================================================================
-unsigned char scantokey[128] =
+const unsigned char scantokey[128] =
 {
 //  0           1       2       3       4       5       6       7 
 //  8           9       A       B       C       D       E       F 
@@ -132,7 +132,7 @@ unsigned char scantokey[128] =
     0  ,    0  ,    0  ,    0  ,    0  ,    0  ,    0  ,    0         // 7 
 };
 
-char *tongue[] =
+const char *tongue[] =
 {
 	"Has recogido",                            // weapon pickup TX NOTE:+ the items in the weapons section below.
 	"Has recogido",			                // health pickup TX NOTE:+ one of the 3 health items below (health kit, Goldenorb, Wraith orb.
@@ -219,7 +219,7 @@ char *tongue[] =
 };
 
 // menu-related TX NOTE:all independent words -- no grammatical inflection.
-char *tongue_menu[] =
+const char *tongue_menu[] =
 {
 	"Adelante",                                  // key bind to Move Forward
 	"Atrás",                                 // key bind to Move Backward 
@@ -394,7 +394,6 @@ char *tongue_menu[] =
 	"Rueda abajo",								//cek[12-7-99]
 
 	"No permitir ALT+TAB",						//cek[12-7-99]
-	"Sangre y carne",						//cek[12-7-99]
 	"Balanceo del arma",							//cek[12-7-99]
 	"Cambio auto de arma",						//cek[12-7-99]
 
@@ -488,10 +487,11 @@ char *tongue_menu[] =
 	"Aumentar Vitalidad",	// FS: Added by request
 
 	"Botón 4",			// Knightmare 1/30/15- button 4 label
-	"Botón 5"			// Knightmare 1/30/15- button 5 label
+	"Botón 5",			// Knightmare 1/30/15- button 5 label
+	"Aceleración",	/* FS */
 };
 
-char *tongue_menu_options[] =
+const char *tongue_menu_options[] =
 {
 	"Correr siempre",                               // makes user's characters run everywhere
 	"Mirar y saltar",                               // look + jump
@@ -577,6 +577,7 @@ char *tongue_menu_options[] =
 
 	/* FS: Video Options Page 2 */
 	"Self Shadows",
+	"Debris Shadows",
 	"Dynamic Lights",
 	"Particles",
 	"Reduced Particles",
@@ -589,10 +590,13 @@ char *tongue_menu_options[] =
 	"Texture Filter",
 	"Bilinear",
 	"Trilinear",
+
+	"Field of Vision",
+	"Gun Field of Vision",
 };
 
 //descriptions for the texture quality settings.
-char *texture_quality_desc[] =
+const char *texture_quality_desc[] =
 {
 	"Todo",
 	"1/2",
@@ -601,7 +605,7 @@ char *texture_quality_desc[] =
 };
 
 // weapon names TX NOTE:"you picked up" +.TX NOTE:translate what you can. "localize" spellings of anything else.
-char *tongue_weapons[] =
+const char *tongue_weapons[] =
 {
 	"Sin munición",		//only shows up if you have no ammo for the weapon you're trying to use. TX NOTE:treat like sentence "you have "no ammo".
 	"la ballista", // Ballista
@@ -681,7 +685,7 @@ char *tongue_weapons[] =
 };
 
 // armor TX NOTE:"you picked up" +.TX NOTE:translate what you can. "localize" spellings of anything else.
-char *tongue_armors[] =
+const char *tongue_armors[] =
 {
 	"el blindaje cerámico",
 	"el blindaje cromático",
@@ -694,7 +698,7 @@ char *tongue_armors[] =
 };
 
 // monster names TX NOTE:NOMINITIVE CASE. translate what you can. "localize" spellings of anything else.
-char *tongue_monsters[] =
+const char *tongue_monsters[] =
 {
 	"El robojabalí de batalla",
 	"El prisionero negro",
@@ -768,7 +772,7 @@ char *tongue_monsters[] =
 };
 
 // monster names ACCUSATIVE CASE. NOT USED IN ENGLISH. translate what you can. "localize" spellings of anything else.
-char *tongue_monsters_acc[] =
+const char *tongue_monsters_acc[] =
 {
 	"al robojabalí de batalla",
 	"al prisionero negro",
@@ -840,7 +844,7 @@ char *tongue_monsters_acc[] =
 	"Pez dopado" // FS
 };
 
-char *tongue_world[] =
+const char *tongue_world[] =
 {
 	"todavía hay más",                                 // triggers to go until sequence complete TX NOTE:## +.
 	"¡Secuencia completada!",                         // trigger sequence completed TX NOTE:sentence.
@@ -887,12 +891,12 @@ char *tongue_world[] =
 	"y" // FS
 };
 
-char *tongue_deathmsg_daikatana[] =
+const char *tongue_deathmsg_daikatana[] =
 {
 	"A %s Fue cortado a la mitad por %s\n"
 };
 
-char *tongue_deathmsg_self[] =
+const char *tongue_deathmsg_self[] =
 {
 	" se ha roto el craneo.\n",                          // death, fell TX NOTE:character +. TX NOTE:use your own appropriate slang.
 	"se ha ahogado.\n",                             // death, drowned TX NOTE:character +. TX NOTE:use your own appropriate slang.
@@ -911,7 +915,7 @@ char *tongue_deathmsg_self[] =
 	// TX NOTE:use your own appropriate slang for all entries in this section.
 	
 	//TX NOTE:Grammar note: use constructions that put the victim in the accusative case (direct object)
-char *tongue_deathmsg_weapon1[] =
+const char *tongue_deathmsg_weapon1[] =
 {
 	"¡%s humilló a %s!\n",
 	"¡%s le ha dado una buena a %s!\n",
@@ -922,7 +926,7 @@ char *tongue_deathmsg_weapon1[] =
 	"¡%s dejo tiritando a %s!\n"
 };
 
-char *tongue_deathmsg_weapon2[] =
+const char *tongue_deathmsg_weapon2[] =
 {
 	"¡%s Jugo el frisbee supremo con %s!\n",
 	"¡%s Enveneno a %s!\n",
@@ -932,7 +936,7 @@ char *tongue_deathmsg_weapon2[] =
 	"¡%s se arrodillo ante Zeus!\n"
 };
 
-char *tongue_deathmsg_weapon3[] =
+const char *tongue_deathmsg_weapon3[] =
 {
 	"¡%s fue tajado como si fuera jamon por %s!\n",
 	"¡%s recibio el flechazo de %s!\n",
@@ -942,7 +946,7 @@ char *tongue_deathmsg_weapon3[] =
 	"¡%s fue aniquilado por el demonio de %s!\n"
 };
 
-char *tongue_deathmsg_weapon4[] =
+const char *tongue_deathmsg_weapon4[] =
 {
 	"¡%s balaceo a %s!\n",
 	"¡%s ha pulverizado a %s!\n",
@@ -953,7 +957,7 @@ char *tongue_deathmsg_weapon4[] =
 	"¡%s fue desintegrado por la granada de %s!\n"
 };
 
-char *tongue_scoreboard[] =
+const char *tongue_scoreboard[] =
 {
 	"Nombre",
 	"Muertes",
@@ -965,7 +969,7 @@ char *tongue_scoreboard[] =
 	"Puntuacion"										// cek[1-22-00]
 };
 
-char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
+const char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 {
 	"Selecciona la dificultad:",           // difficulty header TX NOTE:using karate skill levels.
 	"Cinturón blanco",                   // newbie
@@ -973,7 +977,7 @@ char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 	"Cinturón negro"                    // expert (or so they think!)
 };
 
-char *tongue_skincolors[] =
+const char *tongue_skincolors[] =
 {
 	"Azul",                         // blue
 	"Verde",                        // green
@@ -981,7 +985,7 @@ char *tongue_skincolors[] =
 	"Dorado"                          // gold
 };
 
-char *tongue_statbar[] =
+const char *tongue_statbar[] =
 {
 	"POTENCIA",                        // skill 'power' label
 	"ATAQUE",                       // skill 'attack' label
@@ -1003,12 +1007,12 @@ char *tongue_statbar[] =
 	"CARGANDO..."                  // loading new level
 };
 
-char *tongue_weapon_misc[] =
+const char *tongue_weapon_misc[] =
 {
 	"¡los módulos C4 están desestabilizados!\n"    // C4 modules are de-stabilizing
 };
 
-char *tongue_sidekick[] =    // sidekick commands
+const char *tongue_sidekick[] =    // sidekick commands
 { 
 	"Coge",		                        // 'get' item command
 	"Sigue",                          // 'come here', 'come to me'
@@ -1019,7 +1023,7 @@ char *tongue_sidekick[] =    // sidekick commands
 	"Puedo tener"                    //  asking to pick up an item: "Can I have the shotgun?"
 };
 
-char *tongue_ctf[] =
+const char *tongue_ctf[] =
 {
 	"Bandera roja",
 	"Bandera azul",
@@ -1061,7 +1065,7 @@ char *tongue_ctf[] =
 	"¡El enemigo tiene su bandera! ¡Recupera la bandera de vuelta!\n" // FS
 };
 
-char *tongue_deathtag[] =
+const char *tongue_deathtag[] =
 {
 	"Bomba",														// as in backpack
 	"Bomba %s",													// as in red pack
@@ -1085,7 +1089,7 @@ char *tongue_deathtag[] =
 };
 
 /* FS: v1.2 additions */
-char *tongue_save_error[] =
+const char *tongue_save_error[] =
 {
 	"¡Tienes que estar en una partida local para salvar el juego!\n",
 	"¡Tienes que estar en partida para salvar el juego!\n",
@@ -1096,7 +1100,7 @@ char *tongue_save_error[] =
 	"¡No puedes salvar la partida aquí!\n"
 };
 
-char *tongue_quit_msgs[] =
+const char *tongue_quit_msgs[] =
 {
 	"Pensé que eras valiente pero|en realidad sólo eres un cobarde",
 	"¿Vas a salirte del juego|como escapas de todo en tu vida?",
@@ -1114,7 +1118,7 @@ char *tongue_quit_msgs[] =
 	"¿Este juego te toca las narices?|Si lo hace, eres una rata débil y patética|con la que alimentaremos al grifo!"
 };
 
-char *tongue_quit_msgs_rare[] =
+const char *tongue_quit_msgs_rare[] =
 {
 	"Mientras estas fuera, creo que voy a mirar algunos|sitios de internet y navegar un rato|¿Te parece bien?",
 	"¿Salirse de mi?",
@@ -1123,7 +1127,7 @@ char *tongue_quit_msgs_rare[] =
 };
 
 /* FS: Wasn't originally translated.  Reported by Robert. */
-char *tongue_menu_joystick[] =
+const char *tongue_menu_joystick[] =
 {
 	"Configurar Movimiento",
 	"Ninguno",
@@ -1138,7 +1142,7 @@ char *tongue_menu_joystick[] =
 };
 
 /* FS: Seperated these from tongue_menu */
-char *tongue_menu_autoupdate[] =
+const char *tongue_menu_autoupdate[] =
 {
 	"Actualización disponible",
 	"Hay una nueva versión de v1.3 Daikatana disponibles.\n¿Quieres descargarlo?\nPuede desactivar las actualizaciones automáticas en el\nmenú de opciones.",
@@ -1161,5 +1165,6 @@ char *tongue_menu_autoupdate[] =
 	"Fallado",
 	"Abortar",
 	"OK",
-	"¡Descarga finalizada!"
+	"¡Descarga finalizada!",
+	"Noticias"
 };

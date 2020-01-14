@@ -36,39 +36,39 @@
 
 typedef struct
 {
-	char	*name;
+	const char	*name;
 	int		keynum;
 } keyname_t;
 
 extern keyname_t keynames[];
-extern unsigned char scantokey[128];
-extern char *tongue[];
-extern char *tongue_menu[];
-extern char *tongue_menu_options[];
-extern char *texture_quality_desc[];
-extern char *tongue_weapons[];
-extern char *tongue_armors[];
-extern char *tongue_monsters[];
-extern char *tongue_world[];
-extern char *tongue_deathmsg_daikatana[];
-extern char *tongue_deathmsg_self[];
-extern char *tongue_deathmsg_weapon1[];
-extern char *tongue_deathmsg_weapon2[];
-extern char *tongue_deathmsg_weapon3[];
-extern char *tongue_deathmsg_weapon4[];
-extern char *tongue_scoreboard[];
-extern char *tongue_difficulty[];
-extern char *tongue_skincolors[];
-extern char *tongue_statbar[];
-extern char *tongue_weapon_misc[];
-extern char *tongue_sidekick[];
-extern char *tongue_ctf[];
-extern char *tongue_deathtag[];
-extern char *tongue_save_error[];
-extern char *tongue_quit_msgs[];
-extern char *tongue_quit_msgs_rare[];
-extern char *tongue_menu_joystick[];
-extern char *tongue_menu_autoupdate[];
+extern const unsigned char scantokey[128];
+extern const char *tongue[];
+extern const char *tongue_menu[];
+extern const char *tongue_menu_options[];
+extern const char *texture_quality_desc[];
+extern const char *tongue_weapons[];
+extern const char *tongue_armors[];
+extern const char *tongue_monsters[];
+extern const char *tongue_world[];
+extern const char *tongue_deathmsg_daikatana[];
+extern const char *tongue_deathmsg_self[];
+extern const char *tongue_deathmsg_weapon1[];
+extern const char *tongue_deathmsg_weapon2[];
+extern const char *tongue_deathmsg_weapon3[];
+extern const char *tongue_deathmsg_weapon4[];
+extern const char *tongue_scoreboard[];
+extern const char *tongue_difficulty[];
+extern const char *tongue_skincolors[];
+extern const char *tongue_statbar[];
+extern const char *tongue_weapon_misc[];
+extern const char *tongue_sidekick[];
+extern const char *tongue_ctf[];
+extern const char *tongue_deathtag[];
+extern const char *tongue_save_error[];
+extern const char *tongue_quit_msgs[];
+extern const char *tongue_quit_msgs_rare[];
+extern const char *tongue_menu_joystick[];
+extern const char *tongue_menu_autoupdate[];
 
 enum tongue_artifacts_enum
 {
@@ -337,7 +337,6 @@ enum tongue_menu_enum
 	T_MENU_WHEEL_DN,				//cek[12-7-99]
 
 	T_MENU_NO_ALTTAB,				//cek[12-7-99]
-	T_MENU_BLOODY,					//cek[12-7-99]
 	T_MENU_WEAPON_BOB,				//cek[12-7-99]
 	T_MENU_AUTOSWITCH,				//cek[12-7-99]
 
@@ -430,7 +429,8 @@ enum tongue_menu_enum
 	T_MENU_KCC_BOOST_VITA,  // FS: Added by request
 
 	T_MENU_MOUSE_BUTTON4,		// Knightmare 1/30/15- button 4 label
-	T_MENU_MOUSE_BUTTON5		// Knightmare 1/30/15- button 5 label
+	T_MENU_MOUSE_BUTTON5,		// Knightmare 1/30/15- button 5 label
+	T_MENU_MOUSE_ACCEL,			/* FS */
 };
 
 
@@ -521,6 +521,7 @@ enum tongue_menu_options_enum
 
 	/* FS: Video Options Page 2 */
 	T_MENU_VIDEO_SELFSHADOWS,
+	T_MENU_VIDEO_GIBSDEBRISSHADOWS,
 	T_MENU_VIDEO_DYNAMICLIGHTS,
 	T_MENU_VIDEO_PARTICLES,
 	T_MENU_VIDEO_REDUCED_PARTICLES,
@@ -533,6 +534,9 @@ enum tongue_menu_options_enum
 	T_MENU_VIDEO_TEXTURE_FILTER,
 	T_MENU_VIDEO_BILINEAR,
 	T_MENU_VIDEO_TRILINEAR,
+
+	T_MENU_VIDEO_FOV,
+	T_MENU_VIDEO_GUNFOV,
 };
 
 enum tongue_weapon_names
@@ -1019,7 +1023,8 @@ enum tongue_menu_autoupdate_enums
 	T_MENU_UPDATE_STATUS_FAILED,
 	T_MENU_UPDATE_BUTTON_ABORT,
 	T_MENU_UPDATE_BUTTON_OK,
-	T_MENU_UPDATE_DL_FINISHED
+	T_MENU_UPDATE_DL_FINISHED,
+	T_MENU_UPDATE_WHATSNEW
 };
 
 // separate include .h files based on language

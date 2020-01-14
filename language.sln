@@ -1,30 +1,48 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "language", "language.vcproj", "{E6656138-E330-476B-B1E4-C8CEC91D2C2E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "language", "language.vcproj", "{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		French|Win32 = French|Win32
+		French|x64 = French|x64
 		German|Win32 = German|Win32
+		German|x64 = German|x64
 		Italian|Win32 = Italian|Win32
+		Italian|x64 = Italian|x64
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 		Spanish|Win32 = Spanish|Win32
+		Spanish|x64 = Spanish|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Debug|Win32.ActiveCfg = Debug|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Debug|Win32.Build.0 = Debug|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.French|Win32.ActiveCfg = French|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.French|Win32.Build.0 = French|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.German|Win32.ActiveCfg = German|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.German|Win32.Build.0 = German|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Italian|Win32.ActiveCfg = Italian|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Italian|Win32.Build.0 = Italian|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Release|Win32.ActiveCfg = Release|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Release|Win32.Build.0 = Release|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Spanish|Win32.ActiveCfg = Spanish|Win32
-		{E6656138-E330-476B-B1E4-C8CEC91D2C2E}.Spanish|Win32.Build.0 = Spanish|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Debug|Win32.Build.0 = Debug|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Debug|x64.ActiveCfg = Debug|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Debug|x64.Build.0 = Debug|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.French|Win32.ActiveCfg = French|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.French|Win32.Build.0 = French|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.French|x64.ActiveCfg = French|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.French|x64.Build.0 = French|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.German|Win32.ActiveCfg = German|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.German|Win32.Build.0 = German|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.German|x64.ActiveCfg = German|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.German|x64.Build.0 = German|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Italian|Win32.ActiveCfg = Italian|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Italian|Win32.Build.0 = Italian|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Italian|x64.ActiveCfg = Italian|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Italian|x64.Build.0 = Italian|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Release|Win32.ActiveCfg = Release|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Release|Win32.Build.0 = Release|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Release|x64.ActiveCfg = Release|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Release|x64.Build.0 = Release|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Spanish|Win32.ActiveCfg = Spanish|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Spanish|Win32.Build.0 = Spanish|Win32
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Spanish|x64.ActiveCfg = Spanish|x64
+		{FB3BCA8B-9267-4F67-B14D-15EFECFB7CEE}.Spanish|x64.Build.0 = Spanish|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

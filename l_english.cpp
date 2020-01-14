@@ -110,7 +110,7 @@ keyname_t keynames[] =
 
 // vkey conversion table
 //==========================================================================
-unsigned char scantokey[128] =
+const unsigned char scantokey[128] =
 {
 //  0		   1	   2	   3	   4	   5	   6	   7
 //  8		   9	   A	   B	   C	   D	   E	   F
@@ -132,7 +132,7 @@ unsigned char scantokey[128] =
 	0  ,	0  ,	0  ,	0  ,	0  ,	0  ,	0  ,	0		 // 7
 }; 
 
-char *tongue[] =
+const char *tongue[] =
 {
 	"You acquired",								// T_PICKUP_WEAPON	weapon pickup
 	"You needed",								// T_PICKUP_HEALTH	health pickup
@@ -220,7 +220,7 @@ char *tongue[] =
 
 
 // menu-related
-char *tongue_menu[] =
+const char *tongue_menu[] =
 {
 	"Forward",								  // key bind to Move Forward
 	"Backward",								 // key bind to Move Backward
@@ -396,7 +396,6 @@ char *tongue_menu[] =
 	"Wheel down",								//cek[12-7-99]
 
 	"No ALT-TAB allowed",						//cek[12-7-99]
-	"Blood and Carnage",						//cek[12-7-99]
 	"Weapon bobbing",							//cek[12-7-99]
 	"Auto-switch weapons",						//cek[12-7-99]
 
@@ -490,10 +489,11 @@ char *tongue_menu[] =
 	"Boost Vitality",	// FS: Added by request
 
 	"Button 4",			// Knightmare 1/30/15- button 4 label
-	"Button 5"			// Knightmare 1/30/15- button 5 label
+	"Button 5",			// Knightmare 1/30/15- button 5 label
+	"Mouse Acceleration",		/* FS */
 };
 
-char *tongue_menu_options[] =
+const char *tongue_menu_options[] =
 {
 	"Always Run",							   // always run
 	"Lookspring",							   // look-spring
@@ -579,6 +579,7 @@ char *tongue_menu_options[] =
 
 	/* FS: Video Options Page 2 */
 	"Self Shadows",
+	"Debris Shadows",
 	"Dynamic Lights",
 	"Particles",
 	"Reduced Particles",
@@ -591,10 +592,13 @@ char *tongue_menu_options[] =
 	"Texture Filter",
 	"Bilinear",
 	"Trilinear",
+
+	"Field of Vision",
+	"Gun Field of Vision",
 };
 
 //descriptions for the texture quality settings.
-char *texture_quality_desc[] =
+const char *texture_quality_desc[] =
 {
 	"Full",
 	"Half",
@@ -604,7 +608,7 @@ char *texture_quality_desc[] =
 
 
 // weapon names
-char *tongue_weapons[] =
+const char *tongue_weapons[] =
 {
 	"No Ammo",
 	"the Ballista",
@@ -683,7 +687,7 @@ char *tongue_weapons[] =
 	"Cordite Grenades"
 };
 
-char *tongue_armors[] =
+const char *tongue_armors[] =
 {
 	"the Plasteel Armor",
 	"the Chromatic Armor",
@@ -696,7 +700,7 @@ char *tongue_armors[] =
 };
 
 // monster names
-char *tongue_monsters[] =
+const char *tongue_monsters[] =
 {
 	"RoboCo Battle Boar",
 	"Black Prisoner",
@@ -768,7 +772,7 @@ char *tongue_monsters[] =
 	"The DopeFish"
 };
 
-char *tongue_world[] =
+const char *tongue_world[] =
 {
 	"more to go",								 // triggers to go until sequence complete
 	"Sequence completed",						 // trigger sequence completed
@@ -814,12 +818,12 @@ char *tongue_world[] =
 	"and" // FS
 };
 
-char *tongue_deathmsg_daikatana[] =
+const char *tongue_deathmsg_daikatana[] =
 {
 	"%s was sliced open by %s\n"
 };
 
-char *tongue_deathmsg_self[] =
+const char *tongue_deathmsg_self[] =
 {
 	"'s skull appears to be split open.\n",			// death, fell
 	"sucked it down.\n",							// death, drowned
@@ -834,7 +838,7 @@ char *tongue_deathmsg_self[] =
 	"was shocked by lightning.\n"					// FS: death, shocked by lightning bolts in e3
 };
 
-char *tongue_deathmsg_weapon1[] =
+const char *tongue_deathmsg_weapon1[] =
 {
 	"%s was humiliated by %s!\n",
 	"%s ultra-smacked %s into oblivion!\n",
@@ -845,7 +849,7 @@ char *tongue_deathmsg_weapon1[] =
 	"%s shook up %s!\n"
 };
 
-char *tongue_deathmsg_weapon2[] =
+const char *tongue_deathmsg_weapon2[] =
 {
 	"%s played ultimate frisbee with %s!\n",
 	"%s venomized %s!\n",
@@ -855,7 +859,7 @@ char *tongue_deathmsg_weapon2[] =
 	"%s kneeled before Zeus!\n"
 };
 
-char *tongue_deathmsg_weapon3[] =
+const char *tongue_deathmsg_weapon3[] =
 {
 	"%s was carved like a ham by %s!\n",
 	"%s took %s's twig!\n",
@@ -865,7 +869,7 @@ char *tongue_deathmsg_weapon3[] =
 	"%s was done by %s's demon!\n"
 };
 
-char *tongue_deathmsg_weapon4[] =
+const char *tongue_deathmsg_weapon4[] =
 {
 	"%s popped a cap in %s!\n",
 	"%s shell-shocked %s!\n",
@@ -876,7 +880,7 @@ char *tongue_deathmsg_weapon4[] =
 	"%s was masered by %s!\n"
 };
 
-char *tongue_scoreboard[] =
+const char *tongue_scoreboard[] =
 {
 	"Name",
 	"Kills",
@@ -888,7 +892,7 @@ char *tongue_scoreboard[] =
 	"Score"										// cek[1-22-00]
 };
 
-char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
+const char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 {
 	"Select Difficulty:",		   // difficulty header
 	"Ronin",					   // newbie
@@ -896,7 +900,7 @@ char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 	"Shogun"					// expert (or so they think!)
 };
 
-char *tongue_skincolors[] =
+const char *tongue_skincolors[] =
 {
 	"Blue",						 // blue
 	"Green",						// green
@@ -904,7 +908,7 @@ char *tongue_skincolors[] =
 	"Gold"						  // gold
 };
 
-char *tongue_statbar[] =
+const char *tongue_statbar[] =
 {
 	"POWER",						// skill 'power' label
 	"ATTACK",					   // skill 'attack' label
@@ -925,12 +929,12 @@ char *tongue_statbar[] =
 	"LOADING..."					// loading new level
 };
 
-char *tongue_weapon_misc[] =
+const char *tongue_weapon_misc[] =
 {
 	"C4 Modules are destabilizing!\n"	// C4 modules are de-stabilizing
 };
 
-char *tongue_sidekick[] =	// sidekick commands
+const char *tongue_sidekick[] =	// sidekick commands
 {
 	"GET",							// 'get' item command
 	"COME",						  // 'come here', 'come to me'
@@ -941,7 +945,7 @@ char *tongue_sidekick[] =	// sidekick commands
 	"Can I have"					  //  asking to pick up an item: "Can I have the shotgun?"
 };
 
-char *tongue_ctf[] =
+const char *tongue_ctf[] =
 {
 	"Red Flag",
 	"Blue Flag",
@@ -983,7 +987,7 @@ char *tongue_ctf[] =
 	"The enemy has your flag!  Get the flag back!\n" // FS
 };
 
-char *tongue_deathtag[] =
+const char *tongue_deathtag[] =
 {
 	"Bomb",														// as in backpack
 	"%s Bomb",													// as in red pack
@@ -1007,7 +1011,7 @@ char *tongue_deathtag[] =
 };
 
 /* FS: v1.2 additions */
-char *tongue_save_error[] =
+const char *tongue_save_error[] =
 {
 	"You must be running a local game to save!\n",
 	"You must be in a game to save!\n",
@@ -1018,7 +1022,7 @@ char *tongue_save_error[] =
 	"You can not save here!\n"
 };
 
-char *tongue_quit_msgs[] =
+const char *tongue_quit_msgs[] =
 {
 	"Ya thought you were a big boy, but you're|really just a baby boy, aren't you?",
 	"Are you gonna quit this game just like|you quit everything else in life?",
@@ -1036,7 +1040,7 @@ char *tongue_quit_msgs[] =
 	"Does this game trigger you?|If so, you're a weak and pathetic rodent|and will be fed to the griffin!"
 };
 
-char *tongue_quit_msgs_rare[] =
+const char *tongue_quit_msgs_rare[] =
 {
 	"While you're away I think I'll link into some internet|sites and surf for a while.  Is that okay with you?",
 	"Get out of me?",
@@ -1045,7 +1049,7 @@ char *tongue_quit_msgs_rare[] =
 };
 
 /* FS: Wasn't originally translated.  Reported by Robert. */
-char *tongue_menu_joystick[] =
+const char *tongue_menu_joystick[] =
 {
 	"Configure Motion",
 	"None",
@@ -1060,7 +1064,7 @@ char *tongue_menu_joystick[] =
 };
 
 /* FS: Seperated these from tongue_menu */
-char *tongue_menu_autoupdate[] =
+const char *tongue_menu_autoupdate[] =
 {
 	"Update Available",
 	"There is a new version of Daikatana v1.3 available.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
@@ -1083,5 +1087,6 @@ char *tongue_menu_autoupdate[] =
 	"Failed",
 	"Abort",
 	"OK",
-	"Download Finished!"
+	"Download Finished!",
+	"Whats New?"
 };
