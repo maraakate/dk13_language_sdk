@@ -207,15 +207,16 @@ const char *tongue[] =
 	"the health flask",
 	"the health crate",
 	"the health box",
-	"The antidote is empty.\n", // FS: Added CR
+	"The antidote is empty.\n", /* FS: Added CR */
 
 // SCG[2/8/00]: messages for completed artifacts
 	"You found all the AEGIS runes!",
 	"You found all three keystones!",
 	"You have assembled the Purifier",
-	"You ate some fruit.\n", // FS
-	"Bonus Gem acquired", // FS
-	"Current bonus total: ", // FS
+	"You ate some fruit.\n", /* FS */
+	"Bonus Gem acquired", /* FS */
+	"Current bonus total: ", /* FS */
+	"Lift Codes",	// Knightmare added
 };
 
 
@@ -399,9 +400,9 @@ const char *tongue_menu[] =
 	"Weapon bobbing",							//cek[12-7-99]
 	"Auto-switch weapons",						//cek[12-7-99]
 
-	"Texture Gamma",							// FS: Was "Intensity" //cek[12-7-99] cek[12-13-99]
+	"Texture Gamma",							/* FS: Was "Intensity" */
 	"Shiny weapons",							//cek[12-7-99]
-	"Bullet Holes",								// SCG[1/4/00]: 
+	"Bullet Holes",								// SCG[1/4/00]
 
 	"Forward",									//cek[12-9-99]
 	"Side",										//cek[12-9-99]
@@ -446,26 +447,27 @@ const char *tongue_menu[] =
 	"%s is already assigned to %s",				// cek[1-22-00]  as in "F is already assigned to attack" (leave in %s)
 	"Replace?",									// cek[1-22-00]
 
-	"Toastednet",								// FS: changed to tnet
-	"DK News",								// FS: changed to dknews
+	"Toastednet",								/* FS: changed to tnet */
+	"DK News",									/* FS: changed to dknews */
 	"Continue?",								// cek[2-1-00]
 
 	// for the next two, all \n in the strings denotes a string break.  These must remain in place and the translated
 	// string should have them in roughly the same place.
-	"Want custom maps, mods and more?\nGo to dk.toastednet.org.\nContinuing will launch your web browser.",	// FS: changed to tnet
-	"For all your Daikatana news\ngo to www.daikatananews.net.\nContinuing will launch your web browser.",	// FS: changed to dknews			// cek[2-1-00]
+	"Want custom maps, mods and more?\nGo to dk.toastednet.org.\nContinuing will launch your web browser.",	/* FS: changed to tnet */
+	"For all your Daikatana news\ngo to www.daikatananews.net.\nContinuing will launch your web browser.",	/* FS: changed to dknews */
 
 	"Weapon %d",
 	"Cancel",									// cek[3-9-00]
-	"www.daikatananews.net", // FS: changed to dknews													// cek[3-9-00]
+	"www.daikatananews.net", /* FS: changed to dknews */
 	"Go to www.daikatananews.net.\nContinuing will launch your web browser.",			// cek[3-9-00]
 	
-	"Configure Weapons", // FS
-	"Instagib", // FS
-	"Deathmatch taunts", // FS
-	"Unlimited saves", // FS
-	"CTF/DT hints", // FS
-	"Check for Updates", // FS
+	"Configure Weapons", /* FS */
+	"Instagib", /* FS */
+	"Deathmatch taunts", /* FS */
+	"Unlimited saves", /* FS */
+	"CTF/DT hints", /* FS */
+	"Check for Updates", /* FS */
+	"Beta Updates", /* FS */
 
 	"Notice About Mini-Drivers",	// Knightmare added 2/20/13
 	"This version of Daikatana no longer\nsupports the 3DFX and PowerVR mini-drivers.\n3DFX users are strongly recommended to\nuse the Metabyte WickedGL drivers.",	// Knightmare added 2/20/13
@@ -478,15 +480,17 @@ const char *tongue_menu[] =
 	"Shared XP",	// Knightmare added 2/1/14
 	"Delete Game",	// Knightmare added 2/7/14
 	"Delete savegame?",	// Knightmare added 2/7/14
-	"Shift Key",	// FS: For Mouse and Joystick
-	"We have spent a lot of time repairing the\noriginal maps and adding subtle features to\nthe Sidekick AI such as regenerating health.\nThe game is more enjoyable with Sidekicks.", // FS: For no sidekicks
-	"Are you sure you want to play without them?\n", // FS: For no sidekicks
+	"Shift Key",	/* FS: For Mouse and Joystick */
+	"We have spent a lot of time repairing the\noriginal maps and adding subtle features to\nthe Sidekick AI such as regenerating health.\nThe game is more enjoyable with Sidekicks.", /* FS: For no sidekicks */
+	"Are you sure you want to play without them?\n", /* FS: For no sidekicks */
 
-	"Boost Power",		// FS: Added by request
-	"Boost Attack",		// FS: Added by request
-	"Boost Speed",		// FS: Added by request
-	"Boost Acro",		// FS: Added by request
-	"Boost Vitality",	// FS: Added by request
+	"Boost Power",		/* FS: Added by request. */
+	"Boost Attack",		/* FS: Added by request. */
+	"Boost Speed",		/* FS: Added by request. */
+	"Boost Acro",		/* FS: Added by request. */
+	"Boost Vitality",	/* FS: Added by request. */
+	"Quick Save",		/* FS: Added by request. */
+	"Quick Load",		/* FS: Added by request. */
 
 	"Button 4",			// Knightmare 1/30/15- button 4 label
 	"Button 5",			// Knightmare 1/30/15- button 5 label
@@ -505,7 +509,7 @@ const char *tongue_menu_options[] =
 
 	"Sound Effect Volume",					  // volume for sound fx
 	"Music Volume",							 // volume for music
-	"Cinematic Volume",						 // volume for cinematics
+	"Voices Volume",						 // volume for voices
 
 	"Software",								 // video mode, software
 	"OpenGL",								   // video mode, opengl
@@ -525,11 +529,11 @@ const char *tongue_menu_options[] =
 	"Shogun",									// difficulty level hard
 
 	"Snow and Rain",							// cek[1-11-00]
-	"Fog",										// cek[1-11-00]	
+	"Fog",										// cek[1-11-00]
 	
-	"Play Powerup Sounds", // FS
-	"Play Missing Sounds", // FS
-	"Play Sidekick Chatter", // FS
+	"Play Powerup Sounds", /* FS */
+	"Play Missing Sounds", /* FS */
+	"Play Sidekick Chatter", /* FS */
 
 	"Anisotropic Filter",	// Knightmare added 5/29/12
 	"Custom Width",		// Knightmare added 5/29/12
@@ -544,7 +548,7 @@ const char *tongue_menu_options[] =
 
 	"Download Options",		// Knightmare added 11/19/13
 	"Allow downloading",	// Knightmare added 11/19/13
-	"Allow HTTP downloading",		// FS added 03/29/15
+	"Allow HTTP downloading",		/* FS added 03/29/15 */
 	"maps / textures",		// Knightmare added 11/19/13
 	"sounds",				// Knightmare added 11/19/13
 	"models",				// Knightmare added 11/19/13
@@ -659,7 +663,7 @@ const char *tongue_weapons[] =
 	"a mystic Eye",
 	"the Ultimate Gas Hands",
 
-// FS: Needed for Configure Weapons Menu
+	/* FS: Needed for Configure Weapons Menu */
 	"Ion Blaster",
 	"C4 Vitzatergo",
 	"Shotcycler",
@@ -800,11 +804,11 @@ const char *tongue_world[] =
 	"Mikiko Ebihara",							 // Mikiko's full name
 
 	// SCG[10/18/99]: these next 5 had enums, but no strings. 
-	"You were kicked for spamming",								// SCG[10/18/99]: T_PLAYER_SELF_SPAM_KICK // FS: Updated this
-	"was kicked for spamming",								// SCG[10/18/99]: T_PLAYER_SPAM_KICK // FS: Updated this
+	"You were kicked for spamming",								// SCG[10/18/99]: T_PLAYER_SELF_SPAM_KICK /* FS: Updated this */
+	"was kicked for spamming",								// SCG[10/18/99]: T_PLAYER_SPAM_KICK /* FS: Updated this */
 	"",								// SCG[10/18/99]: T_PLAYER_TIME_LIMIT_HIT
 	"",								// SCG[10/18/99]: T_PLAYER_FRAG_LIMIT_HIT
-	"Unknown Player!",								// SCG[10/18/99]: T_TELL_CMD_UNKNOWN_PLAYER // FS: Updated this
+	"Unknown Player!",								// SCG[10/18/99]: T_TELL_CMD_UNKNOWN_PLAYER /* FS: Updated this */
 
 	"Cannot exit area without\n",				// SCG[10/18/99]: no exiting level without sidekicks
 	"Cannot exit without\n",				// SCG[11/9/99]: No exiting without a key
@@ -812,10 +816,10 @@ const char *tongue_world[] =
 
 	"You found a secret!\n",					// cek[1-3-00]
 	"The Manaskull is waning.\n",				   // cek[2-9-00]
-	"Pinned!\n", // FS
-	"Massacre!\n", // FS
-	"Happy Holidays from the Daikatana 1.3 team!\n", // FS
-	"and" // FS
+	"Pinned!\n", /* FS */
+	"Massacre!\n", /* FS */
+	"Happy Holidays from the Daikatana 1.3 team!\n", /* FS */
+	"and" /* FS */
 };
 
 const char *tongue_deathmsg_daikatana[] =
@@ -834,8 +838,8 @@ const char *tongue_deathmsg_self[] =
 	"was telefragged.\n",							// death, teleport
 	"was compressed into a gib pile.\n",			// death, crushed
 	"ate a full load of C4.\n",						// death, C4
-	"was frozen solid.\n",							// FS: death, frozen
-	"was shocked by lightning.\n"					// FS: death, shocked by lightning bolts in e3
+	"was frozen solid.\n",							/* FS: death, frozen */
+	"was shocked by lightning.\n"					/* FS: death, shocked by lightning bolts in e3 */
 };
 
 const char *tongue_deathmsg_weapon1[] =
@@ -929,11 +933,6 @@ const char *tongue_statbar[] =
 	"LOADING..."					// loading new level
 };
 
-const char *tongue_weapon_misc[] =
-{
-	"C4 Modules are destabilizing!\n"	// C4 modules are de-stabilizing
-};
-
 const char *tongue_sidekick[] =	// sidekick commands
 {
 	"GET",							// 'get' item command
@@ -982,9 +981,9 @@ const char *tongue_ctf[] =
 	"Time has expired!\n",
 	"The capture limit has been reached!\n",
 
-	"Get ready for overtime!\n", // FS
-	"You have the enemy flag.  Return to base!\n", // FS
-	"The enemy has your flag!  Get the flag back!\n" // FS
+	"Get ready for overtime!\n", /* FS */
+	"You have the enemy flag.  Return to base!\n", /* FS */
+	"The enemy has your flag!  Get the flag back!\n" /* FS */
 };
 
 const char *tongue_deathtag[] =
@@ -1006,8 +1005,8 @@ const char *tongue_deathtag[] =
 	"%s from your team has scored!\n",
 	"%s from the %s team has scored!\n",
 
-	"You have the Bomb!  Go score!\n", // FS
-	"The other team has their Bomb!\n" // FS
+	"You have the Bomb!  Go score!\n", /* FS */
+	"The other team has their Bomb!\n" /* FS */
 };
 
 /* FS: v1.2 additions */

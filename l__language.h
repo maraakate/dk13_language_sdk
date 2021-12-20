@@ -60,7 +60,6 @@ extern const char *tongue_scoreboard[];
 extern const char *tongue_difficulty[];
 extern const char *tongue_skincolors[];
 extern const char *tongue_statbar[];
-extern const char *tongue_weapon_misc[];
 extern const char *tongue_sidekick[];
 extern const char *tongue_ctf[];
 extern const char *tongue_deathtag[];
@@ -151,16 +150,17 @@ enum tongue_artifacts_enum
 	T_AEGIS_FOUND,
 	T_KEYSTONES_FOUND,
 	T_PURIFIER_FOUND,
-	T_EAT_FRUIT, // FS
-	T_PICKUP_BONUSGEM, // FS
-	T_BONUSGEM_COUNT, // FS
+	T_EAT_FRUIT, /* FS */
+	T_PICKUP_BONUSGEM, /* FS */
+	T_BONUSGEM_COUNT, /* FS */
+	T_KEY_LIFT_CODES,	// Knightmare added
 };
 
 
 enum tongue_menu_enum
 {
 	// menu-related
-	T_MENU_KCC_FORWARD,
+	T_MENU_KCC_FORWARD = 0,
 	T_MENU_KCC_BACKWARD,
 	T_MENU_KCC_STEP_LEFT,
 	T_MENU_KCC_STEP_RIGHT,
@@ -400,13 +400,15 @@ enum tongue_menu_enum
 	T_MENU_PLANET_DK,
 	T_MENU_PLANET_DK_MSG,
 	
-	T_MENU_CONFIGURE_WEAPONS, // FS
-	T_MENU_INSTAGIB, // FS
+	T_MENU_CONFIGURE_WEAPONS,
+	T_MENU_INSTAGIB,
 	
-	T_MENU_DM_TAUNTS, // FS
-	T_MENU_UNLIMITED_SAVES, // FS
-	T_MENU_CTF_HELP, // FS
-	T_MENU_AUTOUPDATE, // FS
+	T_MENU_DM_TAUNTS,
+	T_MENU_UNLIMITED_SAVES,
+	T_MENU_CTF_HELP,
+
+	T_MENU_AUTOUPDATE, /* FS */
+	T_MENU_AUTOUPDATE_BETA_OPTIN, /* FS */
 
 	T_MENU_DRIVERWARN_HEADER,	// Knightmare added 2/20/13
 	T_MENU_DRIVERWARN_MESSAGE1,	// Knightmare added 2/20/13
@@ -419,14 +421,16 @@ enum tongue_menu_enum
 	T_MENU_MPO_DISTRIBUTE_XP,	// Knightmare added 2/1/14
 	T_MENU_DELETE,				// Knightmare added 2/7/14
 	T_MENU_DELETE_SAVEGAME,		// Knightmare added 2/7/14
-	T_MENU_KCC_SHIFT, // FS: For Mouse and Joystick
-	T_MENU_NOSIDEKICKS_WARNING, // FS: For no sidekicks
-	T_MENU_NOSIDEKICKS_CONFIRM, // FS: For no sidekicks
-	T_MENU_KCC_BOOST_POWER,  // FS: Added by request
-	T_MENU_KCC_BOOST_ATTACK,  // FS: Added by request
-	T_MENU_KCC_BOOST_SPEED,  // FS: Added by request
-	T_MENU_KCC_BOOST_ACRO,  // FS: Added by request
-	T_MENU_KCC_BOOST_VITA,  // FS: Added by request
+	T_MENU_KCC_SHIFT, /* FS: For Mouse and Joystick */
+	T_MENU_NOSIDEKICKS_WARNING, /* FS: For no sidekicks */
+	T_MENU_NOSIDEKICKS_CONFIRM, /* FS: For no sidekicks */
+	T_MENU_KCC_BOOST_POWER, /* FS: Added by request. */
+	T_MENU_KCC_BOOST_ATTACK, /* FS: Added by request. */
+	T_MENU_KCC_BOOST_SPEED, /* FS: Added by request. */
+	T_MENU_KCC_BOOST_ACRO, /* FS: Added by request. */
+	T_MENU_KCC_BOOST_VITA, /* FS: Added by request. */
+	T_MENU_KCC_QUICK_SAVE, /* FS: Added by request. */
+	T_MENU_KCC_QUICK_LOAD, /* FS: Added by request. */
 
 	T_MENU_MOUSE_BUTTON4,		// Knightmare 1/30/15- button 4 label
 	T_MENU_MOUSE_BUTTON5,		// Knightmare 1/30/15- button 5 label
@@ -469,9 +473,9 @@ enum tongue_menu_options_enum
 	T_MENU_VIDEO_SNOW_RAIN,			// cek[1-11-00]
 	T_MENU_VIDEO_SHOW_FOG,
 
-	T_MENU_VOLUME_POWERUP, // FS
-	T_MENU_VOLUME_MISSING, // FS
-	T_MENU_VOLUME_SIDEKICK, // FS
+	T_MENU_VOLUME_POWERUP, /* FS */
+	T_MENU_VOLUME_MISSING, /* FS */
+	T_MENU_VOLUME_SIDEKICK, /* FS */
 
 	T_MENU_VIDEO_ANISOTROPIC,	// Knightmare added 5/29/12
 	T_MENU_VIDEO_CUSTOM_WIDTH,	// Knightmare added 5/29/12
@@ -486,7 +490,7 @@ enum tongue_menu_options_enum
 
 	T_MENU_DOWNLOAD_TITLE,		// Knightmare added 11/19/13
 	T_MENU_DOWNLOAD_DOWNLOAD,	// Knightmare added 11/19/13
-	T_MENU_DOWNLOAD_HTTP,		// FS added 03/29/15
+	T_MENU_DOWNLOAD_HTTP,		/* FS added 03/29/15 */
 	T_MENU_DOWNLOAD_MAPS,		// Knightmare added 11/19/13
 	T_MENU_DOWNLOAD_SOUNDS,		// Knightmare added 11/19/13
 	T_MENU_DOWNLOAD_MODELS,		// Knightmare added 11/19/13
@@ -732,8 +736,8 @@ enum tongue_world
 
 	T_PLAYER_SELF_SPAM_KICK,
 	T_PLAYER_SPAM_KICK,
-	T_PLAYER_TIME_LIMIT_HIT, // FS: Empty, old remnants
-	T_PLAYER_FRAG_LIMIT_HIT, // FS: Empty, old remnants
+	T_PLAYER_TIME_LIMIT_HIT, /* FS: Empty, old remnants */
+	T_PLAYER_FRAG_LIMIT_HIT, /* FS: Empty, old remnants */
 	T_TELL_CMD_UNKNOWN_PLAYER,
 
 	T_NO_EXIT_WITHOUT_SIDEKICKS,
@@ -742,11 +746,11 @@ enum tongue_world
 
 	T_FOUND_SECRET,							// cek[1-3-00]
 	T_POWERUPS_MANASKULL_EXPIRE,				// cek[2-9-00]
-	T_BALLISTA_PINNED,	// FS
-	T_MASSACRE, // FS
-	T_HAPPY_HOLIDAYS, // FS
+	T_BALLISTA_PINNED,	/* FS */
+	T_MASSACRE, /* FS */
+	T_HAPPY_HOLIDAYS, /* FS */
 
-	T_AND // FS
+	T_AND /* FS */
 };
 
 
@@ -761,18 +765,18 @@ enum tongue_deathsmg_self_enums
 	T_DEATHMSGSELF_TELEFRAG,
 	T_DEATHMSGSELF_CRUSHED,
 	T_DEATHMSGSELF_C4,
-	T_DEATHMSGSELF_FROZEN, // FS
-	T_DEATHMSGSELF_SHOCKED // FS
+	T_DEATHMSGSELF_FROZEN, /* FS */
+	T_DEATHMSGSELF_SHOCKED /* FS */
 };
 
 enum tongue_deathmsg_daikatana_enum
 {
-	T_DEATHMSGWEAPON_DK_1
+	T_DEATHMSGWEAPON_DK_1 = 0
 };
 
 enum tongue_deathmsg_weapons_enum1
 {
-	T_DEATHMSGWEAPON_DISRUPTOR,
+	T_DEATHMSGWEAPON_DISRUPTOR = 0,
 	T_DEATHMSGWEAPON_GASHANDS,
 	T_DEATHMSGWEAPON_IONBLASTER,
 	T_DEATHMSGWEAPON_C4,
@@ -783,7 +787,7 @@ enum tongue_deathmsg_weapons_enum1
 
 enum tongue_deathmsg_weapons_enum2
 {
-	T_DEATHMSGWEAPON_DISCUSS,
+	T_DEATHMSGWEAPON_DISCUS = 0,
 	T_DEATHMSGWEAPON_VENOMOUS,
 	T_DEATHMSGWEAPON_SUNFLARE,
 	T_DEATHMSGWEAPON_HAMMER,
@@ -793,7 +797,7 @@ enum tongue_deathmsg_weapons_enum2
 
 enum tongue_deathmsg_weapons_enum3
 {
-	T_DEATHMSGWEAPON_SILVERCLAW,
+	T_DEATHMSGWEAPON_SILVERCLAW = 0,
 	T_DEATHMSGWEAPON_BOLTER,
 	T_DEATHMSGWEAPON_BALLISTA,
 	T_DEATHMSGWEAPON_STAVROS,
@@ -803,7 +807,7 @@ enum tongue_deathmsg_weapons_enum3
 
 enum tongue_deathmsg_weapons_enum4
 {
-	T_DEATHMSGWEAPON_GLOCK,
+	T_DEATHMSGWEAPON_GLOCK = 0,
 	T_DEATHMSGWEAPON_SLUGGER,
 	T_DEATHMSGWEAPON_RIPGUN,
 	T_DEATHMSGWEAPON_CORDITE,
@@ -865,14 +869,6 @@ enum tongue_statbar_enums
 	T_TRANSITION_LOADING
 };
 
-
-enum tongue_weapon_misc_enums
-{
-	T_WEAPON_MISC_C4DESTABILIZING = 0
-};
-
-
-
 enum tongue_sidekick_enums
 {
 	T_SIDEKICK_CMD_GET = 0,
@@ -886,7 +882,7 @@ enum tongue_sidekick_enums
 
 enum tongue_ctf_enums
 {
-	T_FLAG_TEAM1,
+	T_FLAG_TEAM1 = 0,
 	T_FLAG_TEAM2,
 	T_TEAM_NAMES,
 	
@@ -921,14 +917,14 @@ enum tongue_ctf_enums
 	T_CTF_TIME_EXPIRED,
 	T_CTF_LIMIT_REACHED,
 	
-	T_CTF_OVERTIME, // FS
-	T_CTF_MSG_YOU_HAVE_FLAG, // FS
-	T_CTF_MSG_O_HAS_FLAG // FS
+	T_CTF_OVERTIME,
+	T_CTF_MSG_YOU_HAVE_FLAG,
+	T_CTF_MSG_O_HAS_FLAG
 };
 
 enum tongue_deathtag_enums
 {
-	TONGUE_DT_PACK,
+	TONGUE_DT_PACK = 0,
 	TONGUE_DT_TEAM_PACK,
 	TONGUE_DT_SCORE_LIMIT,
 	TONGUE_DT_TIME_ROUT,
@@ -945,13 +941,13 @@ enum tongue_deathtag_enums
 	TONGUE_DT_Y_TEAM_SCORED,
 	TONGUE_DT_O_TEAM_SCORED,
 	
-	TONGUE_DT_MSG_YOU_HAVE_FLAG, // FS
-	TONGUE_DT_MSG_O_HAS_FLAG // FS
+	TONGUE_DT_MSG_YOU_HAVE_FLAG,
+	TONGUE_DT_MSG_O_HAS_FLAG
 };
 
-enum tongue_save_error_enums // FS
+enum tongue_save_error_enums
 {
-	TONGUE_SAVE_ERR_LOCAL,
+	TONGUE_SAVE_ERR_LOCAL = 0,
 	TONGUE_SAVE_ERR_INGAME,
 	TONGUE_SAVE_ERR_DM,
 	TONGUE_SAVE_ERR_CINE,
@@ -962,7 +958,7 @@ enum tongue_save_error_enums // FS
 
 enum tongue_quit_msgs_enums /* FS: Multi-Lang DLL */
 {
-	TONGUE_QUIT_MSG1,
+	TONGUE_QUIT_MSG1 = 0,
 	TONGUE_QUIT_MSG2,
 	TONGUE_QUIT_MSG3,
 	TONGUE_QUIT_MSG4,
@@ -980,7 +976,7 @@ enum tongue_quit_msgs_enums /* FS: Multi-Lang DLL */
 
 enum tongue_menu_quitmsgs_rare_enums /* FS: Multi-Lang DLL */
 {
-	TONGUE_QUIT_MSG_RARE1,
+	TONGUE_QUIT_MSG_RARE1 = 0,
 	TONGUE_QUIT_MSG_RARE2,
 	TONGUE_QUIT_MSG_RARE3,
 	TONGUE_QUIT_MSG_RARE4
@@ -988,7 +984,7 @@ enum tongue_menu_quitmsgs_rare_enums /* FS: Multi-Lang DLL */
 
 enum tongue_menu_joystick_enums /* FS: Wasn't originally translated.  Reported by Robert */
 {
-	T_MENU_JOYSTICK_CONFIG_MOTION,
+	T_MENU_JOYSTICK_CONFIG_MOTION = 0,
 	T_MENU_JOYSTICK_NONE,
 	T_MENU_JOYSTICK_WALK,
 	T_MENU_JOYSTICK_PITCH,
@@ -1002,7 +998,7 @@ enum tongue_menu_joystick_enums /* FS: Wasn't originally translated.  Reported b
 
 enum tongue_menu_autoupdate_enums
 {
-	T_MENU_UPDATE_HEADER,
+	T_MENU_UPDATE_HEADER = 0,
 	T_MENU_UPDATE_MESSAGE1,
 	T_MENU_UPDATE_MESSAGE_PAK_OFFICIAL,
 	T_MENU_UPDATE_MESSAGE_PAK_OFFICIAL_CONFIRM,
@@ -1053,4 +1049,3 @@ enum tongue_menu_autoupdate_enums
 #endif
 
 #endif // _L__LANGUAGE_H
-

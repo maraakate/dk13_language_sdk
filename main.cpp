@@ -45,7 +45,6 @@ DllExport language_export_t *GetLangAPI (void *import)
 	lang.tongue_sidekick = tongue_sidekick;
 	lang.tongue_skincolors = tongue_skincolors;
 	lang.tongue_statbar = tongue_statbar;
-	lang.tongue_weapon_misc = tongue_weapon_misc;
 	lang.tongue_weapons = tongue_weapons;
 	lang.tongue_world = tongue_world;
 
