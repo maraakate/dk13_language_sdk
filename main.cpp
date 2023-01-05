@@ -1,6 +1,6 @@
 #include "l__language.h"
 
-#ifdef _MSC_VER
+#ifdef _WIN32
 //	for C++ classes that will be used in other DLLs
 #ifndef	DllExport_Plus
 #define DllExport_Plus __declspec(dllexport)
@@ -49,4 +49,4 @@ DllExport language_export_t *GetLangAPI (void *import)
 	lang.tongue_world = tongue_world;
 
 	return &lang;
-}    
+}

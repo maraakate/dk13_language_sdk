@@ -482,7 +482,7 @@ const char *tongue_menu[] =
 	"Delete savegame?",	// Knightmare added 2/7/14
 	"Shift Key",	/* FS: For Mouse and Joystick */
 	"We have spent a lot of time repairing the\noriginal maps and adding subtle features to\nthe Sidekick AI such as regenerating health.\nThe game is more enjoyable with Sidekicks.", /* FS: For no sidekicks */
-	"Are you sure you want to play without them?\n", /* FS: For no sidekicks */
+	"Are you sure you want to play without them?", /* FS: For no sidekicks */
 
 	"Boost Power",		/* FS: Added by request. */
 	"Boost Attack",		/* FS: Added by request. */
