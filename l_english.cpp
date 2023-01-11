@@ -1067,8 +1067,6 @@ const char *tongue_menu_autoupdate[] =
 {
 	"Update Available",
 	"There is a new version of Daikatana v1.3 available.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
-	"Your PAK files are out of date.\nYou may be using v1.0 PAK files.\nDaikatana v1.3 requires v1.2 PAKs.\nClick the button for upgrade information.",
-	"Daikatana will now verify your PAK files\nto ensure they are updated to v1.2.\nThis may take up to 30 seconds on\nold hardware.\nThis check will only be run once.",
 	"There is a new map updates pak available.\nThis can affect your connectivity to servers.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
 	"Download Update",
 	"Verify PAK Files",

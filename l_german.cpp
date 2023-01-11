@@ -1095,8 +1095,6 @@ const char *tongue_menu_autoupdate[] =
 {
 	"Update verfügbar",
 	"Eine neue Version von Daikatana v1.3\nist verfügbar.",
-	"Ihre PAK-Dateien sind veraltet.\nEs können keine v1.0 PAK-Dateien verwendet werden.\nDaikatana v1.3 benötigt v1.2 PAK-Dateien.\nFür das Upgrade hier klicken.",
-	"Daikatana wird die PAK-Dateien verifizieren.\nDie Überprüfung kann auf älteren Computern 30 Sek.\ndauern und wird nur ein einziges Mal durchgeführt.",
 	"Eine neue Version von Daikatana v1.3 Karten\nist verfügbar.",
 	"Update herunterladen",
 	"PAK-Dateien verifizieren",

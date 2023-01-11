@@ -1149,8 +1149,6 @@ const char *tongue_menu_autoupdate[] =
 {
 	"Aggiornamento disponibile",
 	"C'Ë una nuova versione di Daikatana v1.3 disponibile.\nVuoi scaricarlo?\n» possibile disattivare gli aggiornamenti automatici del\nmenu delle opzioni.",
-	"Dati PAK verifica fallita.\nE 'errore usare i dati PAK v1.0.\nDaikatana v1.3 richiedono v1.2 dati PAK.\nClicca per l'aggiornamento.",
-	"Daikatana verificher‡ i dati PAK Ë v1.2.\nTempo di prova 30 secondi sul vecchio computer.\nLa prova viene eseguita una volta.",
 	"C'Ë una nuova versione di Daikatana v1.3 Mappa dei dati disponibile.\nVuoi scaricarlo?\n» possibile disattivare gli aggiornamenti automatici del\nmenu delle opzioni.",
 	"Download Aggiornamento",
 	"Verifica PAK dati",

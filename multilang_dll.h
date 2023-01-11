@@ -1,7 +1,7 @@
 #ifndef __MULTILANG_H
 #define __MULTILANG_H
 
-#define	LANGDLL_API_VERSION		19
+#define	LANGDLL_API_VERSION		20
 
 typedef struct
 {
