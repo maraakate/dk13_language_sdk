@@ -534,13 +534,12 @@ const char *tongue_menu_options[] =
 	"Nebbia",										// cek[1-11-00]		
 	
 	"Riprodurre i Suoni Powerup", /* FS */
-	"Riprodurre i Suoni Mancante", /* FS */
 	"Riprodurre i Suoni Sidekick", /* FS */
 	
 	"Filtro Anisotropico",	// Knightmare added 5/29/12
 	"Larghezza Personalizzata",	// Knightmare added 5/29/12
 	"Altezza Personalizzata",	// Knightmare added 5/29/12
-	"Dimensioni barra di stato",	// Knightmare added 6/14/12
+	"Dimensione dell'interfaccia utente",	// Knightmare added 6/14/12
 	"Sincronizzazione Verticale",	// Knightmare added 10/4/12
 	"Aggiornamento Asincrono",		// Knightmare added 10/4/12
 	"Frequenza di aggiornamento",	// Knightmare added 10/4/12
@@ -985,10 +984,13 @@ const char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 
 const char *tongue_skincolors[] =
 {
-	"Blu",                         // blue
+	"Blu",                          // blue
 	"Verde",                        // green
-	"Rosso",                          // red
-	"Oro"                          // gold
+	"Rosso",                        // red
+	"Oro",                          // gold
+	"Blu scuro",                    // dark blue
+	"Marrone",                      // maroon
+	"Olivastro"                     // olive
 };
 
 const char *tongue_statbar[] =
@@ -1148,8 +1150,8 @@ const char *tongue_menu_joystick[] =
 const char *tongue_menu_autoupdate[] =
 {
 	"Aggiornamento disponibile",
-	"C'Ë una nuova versione di Daikatana v1.3 disponibile.\nVuoi scaricarlo?\n» possibile disattivare gli aggiornamenti automatici del\nmenu delle opzioni.",
-	"C'Ë una nuova versione di Daikatana v1.3 Mappa dei dati disponibile.\nVuoi scaricarlo?\n» possibile disattivare gli aggiornamenti automatici del\nmenu delle opzioni.",
+	"» disponibile un aggiornamento per Daikatana.\nVuoi scaricarlo?\n» possibile disattivare gli aggiornamenti automatici del\nmenu delle opzioni.",
+	"» disponibile un aggiornamento PAK della mappa.\nVuoi scaricarlo?\n» possibile disattivare gli aggiornamenti automatici del\nmenu delle opzioni.",
 	"Download Aggiornamento",
 	"Verifica PAK dati",
 	"No Grazie",

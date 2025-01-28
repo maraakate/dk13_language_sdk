@@ -532,13 +532,12 @@ const char *tongue_menu_options[] =
 	"Fog",										// cek[1-11-00]
 	
 	"Play Powerup Sounds", /* FS */
-	"Play Missing Sounds", /* FS */
 	"Play Sidekick Chatter", /* FS */
 
 	"Anisotropic Filter",	// Knightmare added 5/29/12
 	"Custom Width",		// Knightmare added 5/29/12
 	"Custom Height",	// Knightmare added 5/29/12
-	"Status Bar Size",	// Knightmare added 6/14/12
+	"User Interface Size",	// Knightmare added 6/14/12
 	"V-Sync",			// Knightmare added 10/4/12
 	"Async refresh",	// Knightmare added 10/4/12
 	"Refresh rate",		// Knightmare added 10/4/12
@@ -906,10 +905,13 @@ const char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 
 const char *tongue_skincolors[] =
 {
-	"Blue",						 // blue
-	"Green",						// green
-	"Red",						  // red
-	"Gold"						  // gold
+	"Blue",                       // blue
+	"Green",                      // green
+	"Red",                        // red
+	"Gold",                       // gold
+	"Dark Blue",                  // dark blue
+	"Maroon",                     // maroon
+	"Olive"                       // olive
 };
 
 const char *tongue_statbar[] =
@@ -1066,8 +1068,8 @@ const char *tongue_menu_joystick[] =
 const char *tongue_menu_autoupdate[] =
 {
 	"Update Available",
-	"There is a new version of Daikatana v1.3 available.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
-	"There is a new map updates pak available.\nThis can affect your connectivity to servers.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
+	"An update to Daikatana is available.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
+	"A map PAK update is available.\nThis can affect your connectivity to servers.\nDo you want to download it?\nYou can disable auto-updates in the\noptions menu.",
 	"Download Update",
 	"Verify PAK Files",
 	"No Thanks",

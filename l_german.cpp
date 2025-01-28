@@ -530,13 +530,12 @@ const char *tongue_menu_options[] =
 	"Nebel",										// cek[1-11-00]		
 	
 	"Powerup-Geräusche wiedergeben", /* FS */
-	"Fehlende Sounds abspielen", /* FS */
 	"Partnerdialoge wiedergeben", /* FS */
 
 	"Anisotrope Filterung",	// Knightmare added 5/29/12
 	"Benutzerdefinierte Breite",	// Knightmare added 5/29/12
 	"Benutzerdefinierte Höhe",	// Knightmare added 5/29/12
-	"Statusleiste Größe",		// Knightmare added 6/14/12
+	"UI-Größe",		// Knightmare added 6/14/12
 	"Vertikale Sync.",		// Knightmare added 10/4/12
 	"Async. Refresh",		// Knightmare added 10/4/12
 	"Aktualisierungsrate",		// Knightmare added 10/4/12
@@ -907,10 +906,13 @@ const char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 
 const char *tongue_skincolors[] =
 {
-	"Blau",             // blue
-	"Grün",            // green
-	"Rot",             // red
-	"Gold"                          // gold
+	"Blau",               // blue
+	"Grün",               // green
+	"Rot",                // red
+	"Gold",               // gold
+	"Dunkelblau",         // dark blue
+	"Kastanienbraun",     // maroon
+	"Oliv"                // olive
 };
 
 const char *tongue_statbar[] =
@@ -1094,8 +1096,8 @@ const char *tongue_menu_joystick[] =
 const char *tongue_menu_autoupdate[] =
 {
 	"Update verfügbar",
-	"Eine neue Version von Daikatana v1.3\nist verfügbar.",
-	"Eine neue Version von Daikatana v1.3 Karten\nist verfügbar.",
+	"Ein Update für Daikatana\nist verfügbar.",
+	"Ein Update für Daikatana Karten\nist verfügbar.",
 	"Update herunterladen",
 	"PAK-Dateien verifizieren",
 	"Nein Danke",

@@ -533,13 +533,12 @@ const char *tongue_menu_options[] =
 	"Brouillard",										// cek[1-11-00]
 
 	"Jeu des Sons Powerup", /* FS */
-	"Jeu des Sons Manquant", /* FS */
 	"Jeu des Sons Sidekick", /* FS */
 
 	"Filtre Anisotrope",	// Knightmare added 5/29/12
 	"Largeur Personnalisé",	// Knightmare added 5/29/12
 	"Hauteur Personnalisé",	// Knightmare added 5/29/12
-	"Taille barre d'état",	// Knightmare added 6/14/12
+	"Taille de l'UI",	// Knightmare added 6/14/12
 	"Synchronisation Verticale",	// Knightmare added 10/4/12
 	"Actualisation Asynchrone",		// Knightmare added 10/4/12
 	"Taux de rafraîchissement",		// Knightmare added 10/4/12
@@ -983,10 +982,13 @@ const char *tongue_difficulty[] =  // difficulty settings for 'new game' menu
 
 const char *tongue_skincolors[] =
 {
-	"Bleu",                         // blue
-	"Vert",                        // green
-	"Rouge",                          // red
-	"Doré"                          // gold
+	"Bleu",                          // blue
+	"Vert",                          // green
+	"Rouge",                         // red
+	"Doré",                          // gold
+	"Bleu foncé",                    // dark blue
+	"Bordeaux",                      // maroon
+	"Olivâtre"                       // olive
 };
 
 const char *tongue_statbar[] =
@@ -1146,8 +1148,8 @@ const char *tongue_menu_joystick[] =
 const char *tongue_menu_autoupdate[] =
 {
 	"Mise à jour disponible",
-	"Il existe un nouveau version de Daikatana v1.3 disponible.\nVoulez-vous télécharger?\nVous pouvez désactiver les mises à jour automatiques dans\nmenu Options.",
-	"Il existe une nouvelles mises de la carte pak disponible.\nCela peut affecter votre connectivité aux serveurs.\nDo you want to download it?\nVoulez-vous télécharger?\nVous pouvez désactiver les mises à jour automatiques dans\nmenu Options.",
+	"Une mise à jour de Daikatana est disponible.\nVoulez-vous télécharger?\nVous pouvez désactiver les mises à jour automatiques dans\nmenu Options.",
+	"Une mise à jour de la carte PAK est disponible.\nCela peut affecter votre connectivité aux serveurs.\nVoulez-vous télécharger?\nVous pouvez désactiver les mises à jour automatiques dans\nmenu Options.",
 	"Télécharger la mise à jour",
 	"Verifiera PAK fichiers",
 	"Non Merci",

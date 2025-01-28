@@ -530,13 +530,12 @@ const char *tongue_menu_options[] =
 	"Niebla",										// cek[1-11-00]	
 	
 	"Reproducir sonidos de potencias", /* FS */
-	"Reproducir sonidos eliminados", /* FS */
 	"Reproducir sonidos de Compañeros", /* FS */
 
 	"Filtro Anisotrópico",	// Knightmare added 5/29/12
 	"Anchura Custom",	// Knightmare added 5/29/12
 	"Altura Custom",	// Knightmare added 5/29/12
-	"Tamaño de barra de estado",	// Knightmare added 6/14/12
+	"Tamaño de la IU",	// Knightmare added 6/14/12
 	"Sincronización Vertical",		// Knightmare added 10/4/12
 	"Actualización Asincrónica",	// Knightmare added 10/4/12
 	"Tasa de refresco",			// Knightmare added 10/4/12
@@ -985,8 +984,11 @@ const char *tongue_skincolors[] =
 {
 	"Azul",                         // blue
 	"Verde",                        // green
-	"Rojo",                          // red
-	"Dorado"                          // gold
+	"Rojo",                         // red
+	"Dorado",                       // gold
+	"Azul oscuro",                  // dark blue
+	"Granate",                      // maroon
+	"Oliváceo"                      // olive
 };
 
 const char *tongue_statbar[] =
@@ -1144,8 +1146,8 @@ const char *tongue_menu_joystick[] =
 const char *tongue_menu_autoupdate[] =
 {
 	"Actualización disponible",
-	"Hay una nueva versión de v1.3 Daikatana disponibles.\n¿Quieres descargarlo?\nPuede desactivar las actualizaciones automáticas en el\nmenú de opciones.",
-	"Hay una nueva versión de v1.3 Daikatana disponible.\n¿Quieres descargarlo?\nPuede desactivar las actualizaciones automáticas en el\nmenú de opciones.",
+	"Hay disponible una actualización de Daikatana.\n¿Quieres descargarlo?\nPuede desactivar las actualizaciones automáticas en el\nmenú de opciones.",
+	"Hay disponible una actualización de mapa PAK.\n¿Quieres descargarlo?\nPuede desactivar las actualizaciones automáticas en el\nmenú de opciones.",
 	"Descargar",
 	"Verificar los archivos PAK",
 	"No Gracias",
